@@ -1,4 +1,6 @@
 import pytumblr
+from selenium import webdriver
+
 
 def get_client():
     CONSUMER_KEY = 'OOJii0xL1lndypB7OXNALRUOjoh9L4UB9ODnctfIMML9tnBAjj'
