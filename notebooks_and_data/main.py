@@ -1,4 +1,4 @@
-from tumblr_api import get_client
+from scraping_functions.tumblr_api import get_client
 from selenium import webdriver
 import os
 
