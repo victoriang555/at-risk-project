@@ -1,0 +1,7 @@
+pandas
+sklearn
+pytumblr
+pycorenlp
+matplotlib
+seaborn
+oauth2
