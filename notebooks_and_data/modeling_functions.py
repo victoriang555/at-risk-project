@@ -19,6 +19,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 plt.style.use('ggplot')
+from bokeh.io import push_notebook, show, output_notebook
+from bokeh.plotting import figure
+from bokeh.models import ColumnDataSource, LabelSet
+output_notebook()
+
 
 # Data type libaries
 from datetime import datetime as dt
@@ -150,7 +155,7 @@ def compile_topics_df(combo_models_cv, combo_models_tfidf, cv_fitted, tfidf_fitt
 def plot_docs_svd(lsa_cv_data, lsa_tfidf_data, cleaned_df, text_plotting):
     data = cleaned_df[text_plotting]
     svd_cv = TruncatedSVD(n_components=2)
-    documents_2d_cv = svd.fit_transform(lsa_cv_data)
+    documents_2d_cv = svd_cv.fit_transform(lsa_cv_data)
     df_cv = pd.DataFrame(columns=['x', 'y', 'document'])
     df_cv['x'], df_cv['y'], df_cv['document'] = documents_2d_cv[:,0], documents_2d_cv[:,1], range(len(data))
  
