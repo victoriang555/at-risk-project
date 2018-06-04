@@ -1,18 +1,21 @@
 Steps:
 
-[ ] 1. Scraped hash tags from tophashtags.com
-[ ] 2. Remove hash tags that were clearly not at risk
-[ ] 3. Create a function that used selenium to scrape usernames from the hash tag results
-[ ] 4. Create a separate function to click through the security posting to get the usernames
-[ ] 5. Pass the usernames to function that would scrape the json file for the last 20 posts that a user had using the tumblr api
-[ ] 6. The output of each username search using the tumblr api needs to be flattened using a library called json
-[ ] 7. Create a function that would grab the text of each post from the json and then store each post as a new row into a data frame
-[ ] 8. Create a function to clean each rows in the data frame, so that all punctuation and emojis are removed, all lower case and digits are removed
-[ ] 9. Another function that would identify the language of each of the strings using a python package
-[ ] 10. Implement a function that would stem and lemmatize each post and store as new columns in the data frame
-[ ] 11. Implement a function that would vectorize a post both ways and it would output the two vectorized data, and the resulting objects of fitted classes. So, 4 return objects
-[ ] 12. Pass those 4 objects in to another function, that would fit the vectorized data each of 3 possible models.
+[x] 1. Scraped hash tags from tophashtags.com
+[x] 2. Remove hash tags that were clearly not at risk
+[x] 3. Create a function that used selenium to scrape usernames from the hash tag results
+[x] 4. Create a separate function to click through the security posting to get the usernames
+[x] 5. Pass the usernames to function that would scrape the json file for the last 20 posts that a user had using the tumblr api
+[x] 6. The output of each username search using the tumblr api needs to be flattened using a library called json
+[x] 7. Create a function that would grab the text of each post from the json and then store each post as a new row into a data frame
+[x] 8. Create a function to clean each rows in the data frame, so that all punctuation and emojis are removed, all lower case and digits are removed
+[x] 9. Another function that would identify the language of each of the strings using a python package
+[x] 10. Implement a function that would stem and lemmatize each post and store as new columns in the data frame
+[x] 11. Implement a function that would vectorize a post both ways and it would output the two vectorized data, and the resulting objects of fitted classes. So, 4 return objects
+[x] 12. Pass those 4 objects in to another function, that would fit the vectorized data each of 3 possible models.
 [ ] 13. The result would be a dataframe of each of the vectorized model combinations and a data frame of all the vectorized moels outputs
+[ ] Implement a function that uses pyLDAviz to make a vis of the LDA model
+[ ] Make an LSA visual of the documents
+[ ] Make an LDA visual of the words
 [ ] 14. A separate function that would pull out the topics for each of the 6 models
 [ ] 15. Put all the topics in a new dataframe that would just have all the topics for each of the 6 models
 [ ] 16. Review all the topics in the DF to create a dictionary where the keys would the topics in each of the model and the values would be topic name that i made myself.
