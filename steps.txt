@@ -12,24 +12,24 @@ Steps:
 [x] 10. Implement a function that would stem and lemmatize each post and store as new columns in the data frame
 [x] 11. Implement a function that would vectorize a post both ways and it would output the two vectorized data, and the resulting objects of fitted classes. So, 4 return objects
 [x] 12. Pass those 4 objects in to another function, that would fit the vectorized data each of 3 possible models.
-[ ] 13. The result would be a dataframe of each of the vectorized model combinations and a data frame of all the vectorized moels outputs
-[ ] Implement a function that uses pyLDAviz to make a vis of the LDA model
-[ ] Make an LSA visual of the documents
+[x] 13. The result would be a dataframe of each of the vectorized model combinations and a data frame of all the vectorized moels outputs
+[x] Implement a function that uses pyLDAviz to make a vis of the LDA model
+[x] Make an LSA visual of the documents
 [ ] Make an LDA visual of the words
-[ ] 14. A separate function that would pull out the topics for each of the 6 models
-[ ] 15. Put all the topics in a new dataframe that would just have all the topics for each of the 6 models
-[ ] 16. Review all the topics in the DF to create a dictionary where the keys would the topics in each of the model and the values would be topic name that i made myself.
-[ ] 17. And then I would create another function that would gather coefficients across all the models and compare them and would take the maximum model, maximum topic and associate it to the maximum topic name from 
-[ ] the dictionary
-[ ] 18. This would output a new DF that would contain all the columns for each of the posts
-[ ] 19. Implement a randomizer function from model_type, a column and a value and that would give a subset (defeault: 30%) of the total posts 
-[ ] 20. And then I would review the text for each of the subsets of the output dataframe, so as to create a new list of false positives by adding the index of the list
+[x] 14. A separate function that would pull out the topics for each of the 6 models
+[x] 15. Put all the topics in a new dataframe that would just have all the topics for each of the 6 models
+[x] 16. Review all the topics in the DF to create a dictionary where the keys would the topics in each of the model and the values would be topic name that i made myself.
+[x] 17. And then I would create another function that would gather coefficients across all the models and compare them and would take the maximum model, maximum topic and associate it to the maximum topic name from 
+[x] the dictionary
+[x] 18. This would output a new DF that would contain all the columns for each of the posts
+[x] 19. Implement a randomizer function from model_type, a column and a value and that would give a subset (defeault: 30%) of the total posts 
+[x] 20. And then I would review the text for each of the subsets of the output dataframe, so as to create a new list of false positives by adding the index of the list
 [ ] 21. Implement a function to calculate precesision score from the length of the false positives and length of the subset data frame.
 [ ] 22. Take all the false positives and create a new data set that has all of them removed and output a list of the ones that were removed.
 [ ] 23. This function would take multiple optional criteria:
-[ ] 	* one lda max model, max topic
-[ ] 	* one max model, max topic
-[ ] 	* just one max topic
+[x] 	* one lda max model, max topic
+[x] 	* one max model, max topic
+[x] 	* just one max topic
 [ ] 24. Repeat for the remaining subsets and remove the everything except the post and the usernames and then pass to the next of iteration of vectorization
 [ ] 25. Take the list of unique users from the vectorization and calculate the precision score
-[ ] 
+[ ] 26. Use mongodb

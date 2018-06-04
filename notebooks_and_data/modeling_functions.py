@@ -24,7 +24,6 @@ from bokeh.plotting import figure
 from bokeh.models import ColumnDataSource, LabelSet
 output_notebook()
 
-
 # Data type libaries
 from datetime import datetime as dt
 
